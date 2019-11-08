@@ -23,7 +23,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333; }
+  background-color: rgba(10, 150, 10, 0.35); }
 
 body {
   display: -ms-flexbox;
@@ -70,6 +70,28 @@ body {
   .nav-masthead {
     float: right; } }
 
+main video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%); }
+
+main h1 {
+  font-weight: 900;
+  font-style: italic; }
+
+main .lead {
+  font-weight: 400;
+  text-shadow: 1px 1px 2px black; }
+
 /*
  * Cover
  */
@@ -83,5 +105,5 @@ body {
 /*
  * Footer
  */
-.mastfoot {
+.mastfoot, a {
   color: rgba(255, 255, 255, 0.5); }
