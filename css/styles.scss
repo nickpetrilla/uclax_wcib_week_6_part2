@@ -19,6 +19,13 @@ a:hover {
   border: .05rem solid #fff;
 }
 
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: orange;
+  border: none;
+}
+
 /*
  * Base structure
  */
@@ -112,9 +119,26 @@ main h1 {
 
 main .lead {
   font-weight: 400;
-  text-shadow: 1px 1px 2px black; 
+  text-shadow: 1px 1px 2px black;
 
 }
+
+/*Modal*/
+
+#exampleModalLongTitle{
+  color: Orange;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.modal-body {
+  color: black;
+  display: block;
+  float: left;
+}
+
+
+
 
 /*
  * Cover

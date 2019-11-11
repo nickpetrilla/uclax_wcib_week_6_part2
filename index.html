@@ -21,13 +21,38 @@
 </head>
 
 <body class="text-center">
+
+  <!--Modal-->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Learn More!</h5>
+      </div>
+      <div class="modal-body">
+        <p>GIVE US YOUR INFO TO LEARN MORE!</p>
+        <p>First name: <input type="text" name="firstname"><br></p>
+        <p>Last name: <input type="text" name="lastname"><br></p>
+        <p>Email: <input type="text" name="email"><br></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button id ="info-sub" type="button" class="btn btn-primary" data-dismiss="modal">Submit Info and Ride the Snake!</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--End of modal-->
+
+
   <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
     <header class="masthead mb-auto">
       <div class="inner">
         <h3 class="masthead-brand">RIDE THE SNAKE!</h3>
         <nav class="nav nav-masthead justify-content-center">
           <a class="nav-link active" href="#">HOME</a>
-          <a class="nav-link" href="#">LEARN MORE!</a>
+          <a id="learn-alert" class="nav-link" data-toggle="modal" data-target="#exampleModalCenter">LEARN MORE!</a>
         </nav>
       </div>
     </header>
